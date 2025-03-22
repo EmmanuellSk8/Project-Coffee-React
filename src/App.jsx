@@ -17,8 +17,8 @@ export default function App() {
           </div>
 
           <div>
-            <button id='AllProducts' className='bg-[#6F757C] py-1 px-3 rounded-lg text-[#FEF7EE] font-bold mr-8 hover:scale-105 duration-300 ease-in-out'>All products</button>
-            <button id='Available' className='text-[#FEF7EE] font-bold hover:scale-105 duration-300 ease-in-out'>Available Now</button>
+            <button id='AllProducts' className='cursor-pointer focus:bg-[#6F757C] py-1.5 px-3 rounded-lg text-[#FEF7EE] font-bold mr-8 hover:scale-105 duration-300 ease-in-out'>All products</button>
+            <button id='Available' className='cursor-pointer focus:bg-[#6F757C] py-1.5 px-3 rounded-lg text-[#FEF7EE] font-bold hover:scale-105 duration-300 ease-in-out'>Available Now</button>
           </div>
 
         </div>
