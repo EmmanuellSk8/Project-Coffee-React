@@ -1,35 +1,35 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import './index.css'
+import SectionCoffee from './SectionCoffee'
 
-function App() {
-  const [count, setCount] = useState(0)
+export default function App() {
+
 
   return (
     <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+
+      <section className='w-full justify-center flex mt-36'>
+        <div className="w-[1200px] text-center justify-center">
+
+          <div className="w-full justify-items-center mb-6">
+            <h2 className='text-[#FEF7EE] mb-6 text-[32px]'>Our Collection</h2>
+            <p className='font-bold text-[16px] text-[#6F757C] max-w-[500px] text-center flex'>Introducing our Coffee Collection, a selection of unique coffees
+              from different roast types and origins, expertly roasted in small batches and shipped fresh weekly. </p>
+          </div>
+
+          <div>
+            <button id='AllProducts' className='cursor-pointer focus:bg-[#6F757C] py-1.5 px-3 rounded-lg text-[#FEF7EE] font-bold mr-8 hover:scale-105 duration-300 ease-in-out'>All products</button>
+            <button id='Available' className='cursor-pointer focus:bg-[#6F757C] py-1.5 px-3 rounded-lg text-[#FEF7EE] font-bold hover:scale-105 duration-300 ease-in-out'>Available Now</button>
+          </div>
+
+        </div>
+
+      </section>
+      <SectionCoffee />
+
+
+
+
     </>
+
   )
 }
-
-export default App
